@@ -9,6 +9,15 @@ readme = "README.md"
 python = "^3.11"
 whisper = {git = "https://github.com/openai/whisper.git"}
 
+[tool.poetry.group.whisper.dependencies]
+# whisper's dependencies since poetry does not install them automatically.
+numpy = "^1.23.4"
+torch = "^1.13.0"
+tqdm = "^4.64.1"
+more-itertools = "^9.0.0"
+transformers = "^4.19.0"
+ffmpeg-python = "==0.2.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
