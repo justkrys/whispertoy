@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 whisper = {git = "https://github.com/openai/whisper.git"}
+sounddevice = "^0.4.5"
 
 [tool.poetry.group.whisper.dependencies]
 # whisper's dependencies since poetry does not install them automatically.
